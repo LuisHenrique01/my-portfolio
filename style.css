@@ -227,7 +227,7 @@ section.portfolio .flex {
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 8s;
+    transition: 10s;
     border-radius: 40px;
     cursor: pointer;
     position: relative;
