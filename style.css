@@ -126,7 +126,7 @@ section.topo-do-site .flex {
 /* ESTILOS ESPECIALIDADES */
 
 section.especialidades {
-    padding: 40px;
+    padding: 40px 4%;
 }
 
 section.especialidades .flex {
@@ -152,7 +152,12 @@ section.especialidades .flex {
     color: #23EBC1;
 }
 
-.especialidades .especialidades-box h3 {
+.especialidades .especialidades-box p {
+    text-align: justify;
+}
+
+.especialidades .especialidades-box h3,
+.minhas-experiencias .empresa-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
@@ -286,7 +291,7 @@ section.formulario {
     background-color: #494949;
     border: 0;
     outline: 0;
-    padding: 20px 15px;
+    padding: 20px 8px;
     border-radius: 18px;
     color: #FFFFFF;
     font-size: 18px;
@@ -294,6 +299,7 @@ section.formulario {
 
 .interface form textarea {
     resize: none;
+    max-height: 200px;
 }
 
 .btn-enviar {
@@ -337,4 +343,149 @@ footer .line-footer p a {
     color: #FFFFFF;
     font-size: 18px;
     text-decoration: none;
+}
+
+/* MINHAS EXPERIENCIAS */
+section.minhas-experiencias {
+    padding: 60px 4%;
+    color: #FFFFFF;
+}
+
+.img-empresa img {
+    max-width: 240px;
+    max-height: 120px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.img-empresa {
+    text-align: center;
+}
+
+.minhas-experiencias .flex {
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.minhas-experiencias h2 {
+    margin-bottom: 60px;
+}
+
+.empresa-box {
+    padding: 60px 40px;
+    transition: .2s;
+    max-width: 300px;
+    text-align: left;
+
+}
+
+.empresa-box>* {
+    flex: 1 1 160px;
+}
+
+.empresa-box:hover {
+    box-shadow: 0px 0px 8px #ffffff80;
+    border-radius: 20px;
+    transform: scale(1.05);
+}
+
+.empresa-box p {
+    text-align: justify;
+}
+
+/* ESTILO RESPONSIVO */
+
+@media screen and (max-width: 1020px) {
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    .topo-do-site h1 {
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    .img-topo-site img {
+        width: 100%;
+        height: 80%;
+    }
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 32px;
+    }
+
+    /* ESTILO DO SOBRE */
+    section.sobre {
+        padding: 60px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* RODAPÉ */
+    footer .flex {
+        gap: 18px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+
 }
