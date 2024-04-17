@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <title>Luis Henrique DEV</title>
         <link rel="stylesheet" href="style.css">
+        <script src="menu.js" defer></script>
     </head>
     <body>
         <header>
@@ -31,6 +32,24 @@
                 <div class="btn-contato">
                     <a href="#contato"><button>Contato</button></a>
                 </div>
+
+                <div class="btn-abrir-menu" id="btn-menu"><i class="bi bi-list"></i></div>
+
+                <div class="menu-mobile" id="menu-mobile">
+                    <div class="btn-fechar" id="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#topo-do-site">Início</a></li>
+                            <li><a href="#especialidades">Especialidades</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#portfolio">Projetos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="overlay-menu" id="overlay-menu"></div>
             </div>
         </header>
         <main>
@@ -134,13 +153,37 @@
                         </div>
                         <div class="empresa-box">
                             <div class="img-empresa">
-                                <img src="imagens/avisu_logo.jpeg" alt="AVISU">
+                                <img src="imagens/senac.jpeg" alt="SENAC">
                             </div>
-                            <h3>AVISU</h3>
-                            <p>Como responsável pelo desenvolvimento de novas funcionalidades e manutenção das existentes, trabalhei principalmente com as
-                                tecnologias Django e PostgreSQL, garantindo a eficiência do sistema e otimização de consultas. Além disso, participei ativamente
-                                na melhoria do desempenho do banco de dados através da otimização de consultas. No front-end, utilizei HTML, CSS e JavaScript
-                                para criar interfaces intuitivas e responsivas, proporcionando uma experiência de usuário aprimorada.</p>
+                            <h3>SENAC - PI</h3>
+                            <p>Fui responsável pelo desenvolvimento e manutenção da página web para controle e administração do edital público do Senac.
+                                Utilizei Django e PostgreSQL como as principais tecnologias para criar uma plataforma robusta e eficiente. Além disso, meu papel
+                                envolveu a implementação de recursos de segurança, como autenticação de usuários e proteção de dados sensíveis. A manutenção
+                                contínua da página incluiu a correção de bugs, atualização de recursos e garantia de que a plataforma estivesse sempre
+                                operacional e atendendo às necessidades dos usuários do edital público do Senac.</p>
+                        </div>
+                        <div class="empresa-box">
+                            <div class="img-empresa">
+                                <img src="imagens/fapepi_logo.jpeg" alt="FAPEPI">
+                            </div>
+                            <h3>FAPEPI</h3>
+                            <p>Trabalhei no desenvolvimento de uma aplicação SIG (Sistema de Informação Geográfica) em um projeto financiado pela FAPEPI. Neste
+                                projeto, fui responsável pela criação da API que fornecia os dados para a aplicação, além de realizar a busca desses dados via
+                                webscraping.
+                            </p>
+                        </div>
+                        <div class="empresa-box">
+                            <div class="img-empresa">
+                                <img src="imagens/futuroprev.png" alt="FUTUROPREV">
+                            </div>
+                            <h3>FUTUROPREV</h3>
+                            <p>Durante meu período como estagiário na FuturoPrev, tive a oportunidade de desempenhar
+                                um papel crucial no desenvolvimento de um sistema web utilizando o framework Django.
+                                Esse sistema foi dedicado à gestão eficiente dos processos internos de administração
+                                e operações da empresa.Durante meu período como estagiário na FuturoPrev, tive a oportunidade de desempenhar um papel crucial no
+                                desenvolvimento de um sistema web utilizando o framework Django. Esse sistema foi dedicado à gestão eficiente dos processos
+                                internos de administração e operações da empresa.
+                            </p>
                         </div>
                     </div>
                 </div>
