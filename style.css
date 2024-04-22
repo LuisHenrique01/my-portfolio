@@ -446,6 +446,7 @@ section.minhas-experiencias {
 .btn-abrir-menu i {
     color: #23EBC1;
     font-size: 44px;
+    display: none;
 }
 
 .overlay-menu {
@@ -462,6 +463,10 @@ section.minhas-experiencias {
 /* ESTILO RESPONSIVO */
 
 @media screen and (max-width: 1020px) {
+
+    .btn-abrir-menu i {
+        display: block;
+    }
 
     /* CABEÇALHO */
     .menu-desktop,
