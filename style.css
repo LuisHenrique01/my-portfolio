@@ -4,6 +4,7 @@
     box-sizing: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    font-size: 18px;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 .btn-contato button {
     padding: 10px 40px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
     background-color: #23EBC1;
     border: 0;
@@ -40,13 +41,14 @@ button:hover,
 h2.titulo {
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 1.75rem;
     text-align: center;
 }
 
 h2.titulo span {
     color: #23EBC1;
     font-weight: 600;
+    font-size: 1.75rem;
 }
 
 /* ESTILO CABEÇALHO */
@@ -93,14 +95,14 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 {
     color: #FFFFFF;
-    font-size: 42px;
+    font-size: 2.1rem;
     line-height: 40px;
     font-weight: 800;
 }
 
 .topo-do-site .txt-topo-site h1 span {
     color: #23EBC1;
-    font-size: 75px;
+    font-size: 2.3rem;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -131,6 +133,8 @@ section.especialidades {
 
 section.especialidades .flex {
     gap: 60px;
+    align-items: stretch;
+    justify-content: space-around;
 }
 
 .especialidades .especialidades-box {
@@ -139,6 +143,7 @@ section.especialidades .flex {
     margin-top: 40px;
     border-radius: 28px;
     transition: .2s;
+    max-width: 20vw;
 }
 
 .especialidades .especialidades-box:hover {
@@ -148,7 +153,7 @@ section.especialidades .flex {
 
 
 .especialidades .especialidades-box i {
-    font-size: 64px;
+    font-size: 4rem;
     color: #23EBC1;
 }
 
@@ -158,7 +163,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box h3,
 .minhas-experiencias .empresa-box h3 {
-    font-size: 28px;
+    font-size: 1.8rem;
     margin: 15px 0;
 }
 
@@ -177,13 +182,14 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 48px;
+    font-size: 2.2rem;
     line-height: 48px;
     font-weight: 600;
     margin-bottom: 40px;
 }
 
 .sobre .txt-sobre h2 span {
+    font-size: 2.2rem;
     color: #23EBC1;
     display: block;
     font-weight: 600;
@@ -200,7 +206,7 @@ section.sobre .flex {
     border-radius: 50%;
     border: 0;
     background-color: #23EBC1;
-    font-size: 28px;
+    font-size: 1.8rem;
     cursor: pointer;
     margin: 0 8px;
     transition: .2s;
@@ -254,7 +260,7 @@ section.portfolio .flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     opacity: 0;
     transition: .5s;
@@ -294,7 +300,7 @@ section.formulario {
     padding: 20px 8px;
     border-radius: 18px;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .interface form textarea {
@@ -312,7 +318,7 @@ section.formulario {
     background-color: #23EBC1;
     color: #000000;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     transition: .2s;
 }
@@ -336,12 +342,12 @@ footer .line-footer {
 
 footer .line-footer p i {
     color: #23EBC1;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 footer .line-footer p a {
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
 }
 
@@ -363,7 +369,7 @@ section.minhas-experiencias {
 }
 
 .minhas-experiencias .flex {
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 60px;
@@ -375,15 +381,13 @@ section.minhas-experiencias {
 
 .empresa-box {
     padding: 60px 40px;
-    transition: .2s;
-    max-width: 300px;
+    max-width: 20vw;
     text-align: left;
-
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
 }
 
-.empresa-box>* {
-    flex: 1 1 160px;
-}
 
 .empresa-box:hover {
     box-shadow: 0px 0px 8px #ffffff80;
@@ -423,7 +427,7 @@ section.minhas-experiencias {
 
 .menu-mobile nav ul li a {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
@@ -440,12 +444,12 @@ section.minhas-experiencias {
 
 .menu-mobile .btn-fechar i {
     color: #23EBC1;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .btn-abrir-menu i {
     color: #23EBC1;
-    font-size: 44px;
+    font-size: 2.75rem;
     display: none;
 }
 
@@ -477,7 +481,7 @@ section.minhas-experiencias {
     /* TOPO DO SITE */
 
     .topo-do-site h1 {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 800;
     }
 
@@ -498,6 +502,14 @@ section.minhas-experiencias {
         padding: 40px 8%;
     }
 
+    .especialidades .especialidades-box {
+        max-width: 90vw;
+    }
+
+    .empresa-box {
+        max-width: 90vw;
+    }
+
     /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
@@ -508,7 +520,7 @@ section.minhas-experiencias {
     }
 
     h2.titulo {
-        font-size: 34px;
+        font-size: 2.125rem;
         line-height: 32px;
     }
 
@@ -518,7 +530,7 @@ section.minhas-experiencias {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 34px;
+        font-size: 2.125rem;
         line-height: 32px;
         text-align: center;
     }
